@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    background: #d35400;
+    padding: 15px;
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu {
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.menu-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+#im1{
+    height: 200px;
+}
+
+.about, .location {
+    text-align: center;
+    padding: 20px;
+}
+
+.location iframe {
+    border: none;
+    margin-top: 10px;
+}
+footer {
+    background: #d35400;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="menu-card">
+                <img src="images.jpg" id="im1"    alt="Dish 1">
+                <h3>Grilled Steak</h3>
+                <p>Juicy grilled steak served with fresh veggies.</p>
+            </div>
+            <div class="menu-card">
+                <img src="spaghetti-alla-milanese-790x500.jpg" alt="Dish 2">
+                <h3>Italian Pasta</h3>
+                <p>Authentic Italian pasta with rich tomato sauce.</p>
+            </div>
+            <div class="menu-card">
+                <img src="crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"  alt="Dish 3">
+                <h3>Gourmet Burger</h3>
+                <p>Classic beef burger with special house sauce.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Welcome to our restaurant! We serve fresh, delicious meals made with love. Experience a cozy atmosphere and exceptional service.</p>
+    </section>
+
+    <section class="location">
+        <h2>Visit Us</h2>
+        <p>123 Food Street, City, Country</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345098396!2d144.95373631531837!3d-37.816279279751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218cd7a0!2s123%20Food%20Street%2C%20City%2C%20Country!5e0!3m2!1sen!2sus!4v1610000000000"
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    <footer>
+        <p>&copy; 2025 Delicious Restaurant | Follow us on  
+            <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a> |  
+            <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a> |  
+            <a href="#"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>
